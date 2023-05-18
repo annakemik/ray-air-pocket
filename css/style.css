@@ -123,8 +123,15 @@ body {
 
 .menu__btn-action {
   min-width: 12rem;
+  border: none;
   color: white;
-  background-color: black;
+  background-color: #262c27;
+  transition: all 0.3s;
+}
+
+.menu__btn-action:hover {
+  color: #262c27;
+  background-color: #b9c400;
 }
 
 .menu__btn-action,
@@ -320,18 +327,18 @@ th {
 
 .price {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: -9rem;
   bottom: 9rem;
+  height: 10rem;
+  width: 10rem;
+  background-image: url(../images/page-benefits-star.svg);
+  background-position: center;
+  background-size: cover;
   font-size: 2.18rem;
   font-weight: 700;
-}
-
-.price::after {
-  content: url(../images/page-benefits-star.svg);
-  position: absolute;
-  left: -52%;
-  top: -187%;
-  z-index: -1;
 }
 
 .benefits__btn-action {
@@ -342,4 +349,11 @@ th {
   font-weight: 600;
   font-size: 2.5rem;
   color: #0093a1;
+  transition: all 0.3s;
+}
+
+.benefits__btn-action:hover {
+  border-color: #b9c400;
+  background-color: #b9c400;
+  color: #262c27;
 }
