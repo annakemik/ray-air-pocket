@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Inter", sans-serif;
   /*font-family: 'Comfortaa', cursive;*/
@@ -28,6 +32,10 @@ body {
   line-height: 1.2;
   color: #262c27;
 }
+
+/**************************/
+/* GENERAL COMPONENTS*/
+/**************************/
 
 .container {
   max-width: 75rem;
@@ -42,7 +50,16 @@ body {
   text-transform: uppercase;
 }
 
-.popup-btn {
+.subtitle {
+  text-transform: uppercase;
+}
+
+.btn-action {
+  padding: 0.75rem 4.3rem;
+  text-transform: uppercase;
+}
+
+.btn-popup {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +67,6 @@ body {
   border: none;
   background-color: transparent;
   color: white;
-  cursor: pointer;
 }
 
 /**************************/
@@ -105,16 +121,13 @@ body {
   padding: 3rem;
 }
 
-.btn-action {
+.menu__btn-action {
   min-width: 12rem;
-  padding: 0.75rem 4.3rem;
-  border: none;
-  background-color: black;
   color: white;
-  cursor: pointer;
+  background-color: black;
 }
 
-.btn-action,
+.menu__btn-action,
 .tel {
   font-weight: 700;
   font-size: 1.25rem;
@@ -145,8 +158,7 @@ body {
   font-size: 4rem;
 }
 
-.sub-title,
-.size {
+.header__text {
   margin-bottom: 1.25rem;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -235,7 +247,7 @@ body {
   margin-top: 17.5rem;
 }
 
-.specs-btn {
+.btn-specs {
   margin: 5rem 0 0 auto;
 }
 
@@ -270,4 +282,64 @@ td {
 th {
   text-align: left;
   padding-right: 1.56rem;
+}
+
+/**************************/
+/* BENEFITS SECTION */
+/**************************/
+.benefits {
+  margin: 8.12rem 0;
+}
+
+.benefits__title {
+  margin-bottom: 3rem;
+  color: #0093a1;
+}
+
+.benefits__inner {
+  display: flex;
+  gap: 18.75rem;
+}
+
+.benefits__list {
+  position: relative;
+  max-width: 16rem;
+  list-style-type: none;
+}
+
+.benefits__item {
+  margin-bottom: 1.75rem;
+}
+.benefits__subtitle {
+  margin-bottom: 0.3rem;
+}
+
+.benefits__text {
+  font-size: 1.125rem;
+}
+
+.price {
+  position: absolute;
+  right: -9rem;
+  bottom: 9rem;
+  font-size: 2.18rem;
+  font-weight: 700;
+}
+
+.price::after {
+  content: url(../images/page-benefits-star.svg);
+  position: absolute;
+  left: -52%;
+  top: -187%;
+  z-index: -1;
+}
+
+.benefits__btn-action {
+  width: 30rem;
+  border: 2px solid #0093a1;
+  background-color: #fff;
+  font-family: "Comfortaa", cursive;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #0093a1;
 }
