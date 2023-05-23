@@ -357,3 +357,67 @@ th {
   background-color: #b9c400;
   color: #262c27;
 }
+
+/**************************/
+/* TECHNOLOGY SECTION */
+/**************************/
+
+.technology {
+  position: relative;
+  min-height: 500px;
+  background-image: url(../images/page-techno-bg.jpg);
+  margin-top: 200px;
+}
+
+.technology::before {
+  content: url(../images/section-technology-decor.png);
+  position: absolute;
+  transform: translateY(-35%);
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+.footer {
+  background-color: #262c27;
+  padding: 5.25rem 0 3.25rem 0;
+  color: white;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.25rem;
+}
+
+.footer__title {
+  margin-bottom: 2rem;
+}
+
+.address {
+  max-width: 13rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.footer__tel {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer__mailto {
+  display: block;
+}
+
+.footer__gallery {
+  display: flex;
+  gap: 3.25rem;
+  margin-bottom: 3.25rem;
+}
+
+.copyright {
+  display: flex;
+  gap: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
