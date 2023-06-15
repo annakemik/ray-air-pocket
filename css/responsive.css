@@ -1,0 +1,91 @@
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  .hero-section__decor1 {
+    right: 18rem;
+    font-size: 4.6rem;
+  }
+
+  .hero-section__decor2 {
+    left: 4rem;
+    font-size: 4.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 75%;
+  }
+
+  .menu {
+    justify-content: space-around;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .header {
+    background-position: 45%;
+  }
+
+  .menu {
+    gap: 0;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+  }
+
+  .hero-section__title-box {
+    margin-right: 5rem;
+    max-width: 25rem;
+    z-index: 5;
+  }
+
+  .hero-section__decor2 {
+    left: 1rem;
+  }
+
+  .hero-section__decor3 {
+    right: 5%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .hero-section {
+    align-items: flex-start;
+  }
+
+  .header {
+    background-position: 42%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .menu__btn-action {
+    padding: 1.75rem 8rem;
+  }
+
+  .hero-section__decor3 {
+    display: none;
+  }
+
+  .hero-section__title-box {
+    margin: 18rem 6rem 0 0;
+  }
+}
