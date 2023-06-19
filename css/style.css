@@ -33,6 +33,10 @@ button {
   cursor: pointer;
 }
 
+image {
+  object-fit: cover;
+}
+
 /**************************/
 /* GENERAL COMPONENTS*/
 /**************************/
@@ -298,7 +302,7 @@ button {
 
 .specs__text:nth-child(2) {
   border-bottom: 1px solid white;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .specs__text {
@@ -399,7 +403,7 @@ th {
 }
 
 .benefits__btn-action {
-  width: 30rem;
+  width: 40%;
   border: 2px solid #0093a1;
   background-color: #fff;
   font-family: "Comfortaa", cursive;

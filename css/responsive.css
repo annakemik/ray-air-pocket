@@ -1,4 +1,19 @@
 /**************************/
+/* BELOW 1280px (Desktops) */
+/**************************/
+@media (max-width: 80em) {
+  .technology__gallery {
+    grid-template-columns: 3fr 4fr 3fr;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+  }
+
+  .technology__gallery-pic {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+/**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 @media (max-width: 75em) {
@@ -10,6 +25,67 @@
   .hero-section__decor2 {
     left: 4rem;
     font-size: 4.6rem;
+  }
+
+  .specs {
+    min-height: 100rem;
+  }
+
+  .specs__intro {
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .specs__inner {
+    padding: 0 4rem;
+  }
+
+  .specs__text {
+    min-width: 14rem;
+    line-height: 1.5;
+  }
+
+  .specs__text:nth-child(2) {
+    padding-bottom: 2rem;
+  }
+
+  .specs__details {
+    gap: 4rem;
+    justify-content: space-between;
+  }
+
+  .benefits {
+    margin-top: 5.12rem;
+  }
+
+  .benefits__title {
+    margin-left: 1rem;
+  }
+
+  .benefits__list {
+    margin-left: 1.5rem;
+  }
+
+  .technology__title {
+    margin-left: 1rem;
+  }
+
+  .technology__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .technology__info {
+    margin-bottom: 2rem;
+  }
+
+  .technology__text {
+    max-width: 31rem;
+  }
+
+  .technology__image {
+    width: 60%;
   }
 }
 
@@ -24,6 +100,58 @@
   .menu {
     justify-content: space-around;
   }
+
+  .hero-section__title-box {
+    z-index: 5;
+  }
+
+  .specs__intro {
+    margin-bottom: 25vh;
+  }
+
+  .specs__intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specs__text:nth-child(2) {
+    margin-top: -1rem;
+  }
+
+  .specs__text {
+    max-width: none;
+  }
+
+  .specs__image {
+    width: 25%;
+  }
+
+  .specs__btn-popup {
+    margin: 2rem auto;
+  }
+
+  .benefits__image {
+    width: 50%;
+  }
+
+  .benefits__list,
+  .benefits__btn-action {
+    position: relative;
+    z-index: 5;
+  }
+
+  .technology__inner {
+    margin-bottom: 4rem;
+  }
+
+  .technology__list {
+    margin-bottom: 4rem;
+  }
+
+  .technology,
+  .technology__title {
+    color: white;
+  }
 }
 
 /**************************/
@@ -36,14 +164,13 @@
 
   .menu {
     gap: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 3rem 1rem;
   }
 
   .hero-section__title-box {
     margin-right: 5rem;
     max-width: 25rem;
-    z-index: 5;
   }
 
   .hero-section__decor2 {
@@ -51,7 +178,50 @@
   }
 
   .hero-section__decor3 {
-    right: 5%;
+    display: none;
+  }
+
+  .specs__details {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .benefits__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits__list {
+    max-width: none;
+  }
+
+  .price {
+    right: 1rem;
+    bottom: 1rem;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .benefits__btn-action {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .technology__image {
+    width: 100%;
+  }
+
+  .technology__gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .technology__gallery-text,
+  .technology__gallery-pic1,
+  .technology__gallery-pic3 {
+    display: none;
   }
 }
 
@@ -59,17 +229,17 @@
 /* BELOW 544px (Phones) */
 /**************************/
 @media (max-width: 34em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 50%;
+  .header {
+    background-position: 42%;
   }
 
   .hero-section {
     align-items: flex-start;
+    justify-content: center;
   }
 
-  .header {
-    background-position: 42%;
+  .hero-section__title-box {
+    margin-right: 0;
   }
 
   .menu {
@@ -78,6 +248,7 @@
   }
 
   .menu__btn-action {
+    margin-left: 1rem;
     padding: 1.75rem 8rem;
   }
 
@@ -85,7 +256,17 @@
     display: none;
   }
 
-  .hero-section__title-box {
-    margin: 18rem 6rem 0 0;
+  .price {
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  .title {
+    font-size: 3rem;
   }
 }
